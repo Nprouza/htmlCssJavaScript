@@ -5,7 +5,7 @@ The Creature Guid promo
 | Seconds | Who | Line | What's on the screen |
 |---|---|---|---|
 | 0-4 | HAGRID | Holy cow! I don't know what kind of creature is about to hatch from this egg! | Hagrid standing next to a large egg in a nest, scratching his head. |
-| 4-9 | HARRY | Check Cret=ature Guide! You can search by diet, habitata size, and danger level. | Harry steps into frame hiolding a tiny book. |
+| 4-9 | HARRY | Check Creature Guide! You can search by diet, habitata size, and danger level. | Harry steps into frame hiolding a tiny book. |
 | 9-14 | HARRY | The book shows a magical beats could be neasting inside this egg. | Close shot on the the book with some beats icons. |
 | 14-15 | HAGRID | Wait. Even dragons?. | Hargrid turns quickly toward HArry in surprise. |
 | 15-17 | HARRY | Especially dragrons. | Harrry points at the egg. |
