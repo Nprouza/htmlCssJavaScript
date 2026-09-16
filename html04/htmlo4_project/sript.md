@@ -11,7 +11,7 @@ The Creature Guid promo
 | 15-17 | HARRY | Especially dragrons. | Harrry points at the egg. |
 | 17-20 | Both | Let's get out of here! | Both run off from the frame. |
 
-### Shot list###
+### Shot list ###
 
 1. Hagrid standing beside the nest, hands moving to scratch his head.
 2. Harry enters fromthe right, walking toward Hagrid with small steps.
