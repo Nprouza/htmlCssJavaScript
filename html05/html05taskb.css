@@ -1,0 +1,43 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f3f3f3;
+  color: rgb(32, 33, 36);
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+nav a {
+  font-weight: bold;
+  margin-right: 16px;
+}
+
+.highlight {
+  background-color: #fff7c2;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#featured {
+  background-color: rgb(32, 33, 36);
+  color: white;
+  padding: 16px;
+}
+
+footer {
+  text-align: center;
+  font-size: 14px;
+}
+
+h2 {
+  color: #1f2937;
+}
