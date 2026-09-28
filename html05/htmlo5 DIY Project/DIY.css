@@ -12,7 +12,7 @@ h1 {
 }
 table {
     width:50%;
-    height:auto
+    height:auto;
     border-collapse: collapse;
 }
 th, td {
