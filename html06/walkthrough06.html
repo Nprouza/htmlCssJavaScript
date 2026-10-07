@@ -10,29 +10,44 @@
       margin: 0;                  /* remove the browser's default space around the page */
       background-color: #eeeeee;
     }
-    * {
-        box-sizing: border-box;
-    }
+
     /* Add each new rule below this line */
-    .card {
-        width: 300px;
-        background-color: white;
-        padding: 16px 32px;
-        border: 2px solid #146dd3;
-        border-radius: 8px;
-        margin: 1rem;
-    }
-    .card h2 {
-        margin-top: 0;
-    }
-    main {
-        max-width: 600px;
-        margin: 0 auto;
-        padding: 1rem;
-    }
-    * {
-        outline: 1px solid red;
-    }
+.card {
+  display: inline-block;
+  vertical-align: top;
+  width: 15rem;
+  border: 2px solid blue;
+  border-radius: 8px;
+  background-color: white;
+}
+nav a {
+  display: inline-block;
+  padding: 2rem 2rem;
+  margin-right: 0.5rem;
+  background-color: pink;
+  color:green;
+  text-decoration: none;
+  border: 2px solid blue;
+  border-radius: 8px;
+}
+
+nav a:hover {
+  background-color: #000000;
+  color: white;
+}
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #0d2a4a;
+  color: white;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
   </style>
 </head>
 <body>
@@ -53,6 +68,30 @@
       <h2>Card Two</h2>
       <p>We will use cards to learn padding, border, and margin.</p>
     </div>
+
+    <section>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer pretium velit at ante consectetur, vitae faucibus augue aliquet. Mauris feugiat interdum massa sed tristique. In venenatis convallis turpis, non lacinia lectus fermentum a.</p>
+      <p>Praesent aliquam feugiat ipsum, sit amet semper nunc sodales a. Aliquam imperdiet velit a nisl tristique, ac tristique tellus tristique. Suspendisse potenti. Curabitur et libero sed mi suscipit volutpat. Nam ac augue ac tortor vulputate posuere.</p>
+      <p>Vivamus venenatis facilisis elit ut efficitur. Donec eros lorem, malesuada non urna eget, iaculis consectetur massa. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Donec tincidunt augue non faucibus porttitor.</p>
+      <p>Nam interdum sodales justo, vel feugiat lectus interdum id. Sed hendrerit, mauris vel dictum iaculis, ipsum quam auctor erat, eget accumsan lectus sapien in lectus. Cras in nunc id neque bibendum auctor. Integer ut leo mi.</p>
+      <p>Quisque volutpat aliquam ipsum, a pharetra quam ullamcorper a. Donec posuere mi neque, vel tristique lorem sollicitudin vitae. Morbi mollis, massa sed aliquet cursus, sapien arcu ullamcorper dui, in gravida velit enim vitae nibh.</p>
+      <p>Etiam et augue a libero accumsan volutpat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris sollicitudin, sem nec luctus ullamcorper, magna augue pharetra enim, a tristique sapien ipsum sit amet nibh.</p>
+      <p>Proin non tortor a purus vulputate fermentum. Donec rutrum et augue in blandit. Suspendisse feugiat, libero non gravida semper, ipsum tortor fermentum augue, ut gravida orci risus eu lectus. Integer feugiat feugiat metus.</p>
+      <p>Fusce non mauris sed lectus bibendum pharetra. Aenean blandit eros non ligula pulvinar, non suscipit sapien vulputate. Nulla facilisi. Sed sagittis pulvinar augue, non commodo ligula malesuada vitae. Cras consectetur nisi feugiat nibh volutpat, ut faucibus turpis imperdiet.</p>
+      <p>Donec sit amet lacus ligula. Nulla egestas sem non nisi pretium, ut cursus quam volutpat. In pulvinar eleifend risus, eget varius erat ultrices et. Curabitur feugiat facilisis dolor, non accumsan ligula dignissim ut.</p>
+      <p>Integer consequat feugiat elit, vitae accumsan dui dignissim sed. Morbi luctus interdum odio, ut consectetur lorem ullamcorper at. Nam ac luctus ipsum. Etiam eleifend lacinia aliquam. Sed aliquet, ipsum sed convallis mollis, dui purus mattis augue, vitae consequat est orci vitae magna.</p>
+      <p>Aliquam erat volutpat. In a purus vel nisi porta tristique. Maecenas a mi ut lorem varius pulvinar. Donec faucibus, mauris sed fermentum laoreet, massa purus varius odio, quis dapibus metus lorem vel turpis.</p>
+      <p>Suspendisse consectetur, mauris a mollis rutrum, sem sem ultricies lorem, sit amet volutpat nunc risus ac arcu. Curabitur sagittis at tellus eu dignissim. Vestibulum finibus lorem leo, eu dictum augue sollicitudin in. Duis sollicitudin nibh non nisi elementum, eget condimentum nisl commodo.</p>
+      <p>Nullam sed lectus in orci volutpat commodo. Duis a enim faucibus, fermentum nulla ac, placerat turpis. Phasellus a feugiat lorem. Proin sollicitudin lectus nec purus imperdiet, in bibendum est blandit.</p>
+      <p>Phasellus elementum pharetra laoreet. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Etiam ut justo non odio suscipit tristique. Nunc gravida risus vitae lorem malesuada eleifend.</p>
+      <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean nec ullamcorper lectus. Sed feugiat, massa a rutrum imperdiet, nisl nulla finibus urna, at dignissim lectus tortor a erat.</p>
+      <p>Maecenas tincidunt, lacus sed faucibus maximus, neque tellus suscipit ipsum, vitae consequat tellus metus ac ante. Curabitur luctus, arcu vitae malesuada eleifend, nisi metus finibus turpis, in vestibulum sem lectus non metus.</p>
+      <p>Donec at lectus nec orci blandit euismod. Quisque id nibh orci. Cras at vulputate libero, ac vulputate turpis. Vestibulum tincidunt non orci vitae suscipit. Etiam condimentum magna et odio porttitor, non sodales lorem malesuada.</p>
+      <p>Ut tincidunt blandit purus, at rhoncus dolor pulvinar et. Aenean scelerisque turpis eu sapien sagittis, ut imperdiet ipsum mattis. Nunc feugiat justo nec erat laoreet, non congue magna tempor.</p>
+      <p>Praesent egestas ullamcorper mi, a consequat odio ullamcorper ut. Sed tempor bibendum sem, et posuere ipsum mattis non. Suspendisse potenti. In viverra libero sed leo semper, eget interdum est pretium.</p>
+      <p>Vestibulum posuere, felis sed facilisis feugiat, odio lacus tempus libero, eget scelerisque dolor elit at nunc. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+    </section>
+
   </main>
 </body>
 </html>
