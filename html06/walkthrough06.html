@@ -48,6 +48,30 @@ header h1 {
   margin: 0;
 }
 
+.has-badge {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  background-color: #8c8f02;
+  color:#ff0a1f;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+}
+
+.to-top {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: #1565c0;
+  color:white;
+  padding: 0.25rem 0.5rem;
+  text-decoration: none;
+  border-radius: 2px;
+}
   </style>
 </head>
 <body>
@@ -67,6 +91,13 @@ header h1 {
     <div class="card">
       <h2>Card Two</h2>
       <p>We will use cards to learn padding, border, and margin.</p>
+    </div>
+
+    <div class="card has-badge">
+      <span class="badge">NEW</span>
+      <h2>Card three</h2>
+      <p>This card has a badge</p>
+
     </div>
 
     <section>
@@ -93,5 +124,6 @@ header h1 {
     </section>
 
   </main>
+  <a href="#" class="to-top">back to top</a>
 </body>
 </html>
