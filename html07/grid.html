@@ -69,6 +69,47 @@
       min-width: 12rem;
     }
 
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .page-layout {
+  display: grid;                      /* turn on grid */
+  grid-template-columns: 1fr 3fr;   /* first column is 15rem; 1fr fills the remaining space */
+                                       /* 1fr 1fr = two equal columns */
+                                       /* 1fr 2fr = two columns; second gets twice the space */
+  gap: 1.5rem;                         /* space between columns and rows */
+  margin-top: 1.5rem;                  /* add space above the grid */
+}
+
+/* Give both boxes a border so you can see the two columns */
+.page-layout aside,
+.page-layout section {
+  background-color: #ff0000;
+  border: 2px solid #2c3e50;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+/* Make the sidebar a different color */
+.page-layout aside {
+  background-color: #ff0000;
+}
+
+    @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+    
+    .cards {
+        flex-direction: column;
+    }
+}
+    
+
     /* ===== MARKER A: new rules go here (Steps 3 and 6) ===== */
 
 
@@ -106,7 +147,10 @@
     </div>
 
     <!-- ===== MARKER C: grid HTML goes here (Step 6) ===== -->
-
+  <div class="page-layout">
+  <aside><h2>Sidebar</h2><p>15rem wide.</p></aside>
+  <section><h2>Main Area</h2><p>Takes the rest of the space.</p></section>
+</div>
   </main>
 </body>
 </html>
