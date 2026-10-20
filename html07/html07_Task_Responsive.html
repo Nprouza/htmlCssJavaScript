@@ -5,8 +5,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <!-- TODO 1: Add the viewport meta tag on the line below.
-       Without it, a phone shows a tiny zoomed-out desktop page. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>html07 Task Part 2 - Responsive Design and Grid</title>
   <style>
@@ -132,36 +131,36 @@
 
     /* ---------- Your work starts here ---------- */
 
-    /* TODO 2: Responsive images.
-       Right now the photos are too big and spill out of their boxes.
-       Make every image shrink to fit its box and keep its shape:
-       - max-width: 100%
-       - height: auto
-       - display: block
-       Check: the photos fit inside their white boxes and are not stretched. */
     img {
-
+      max-width: 100%;
+      height: auto;
+      display: block;
     }
 
-    /* TODO 3: CSS Grid two-column layout.
-       Make a 15rem sidebar on the left and an article that takes the rest:
-       - display: grid
-       - grid-template-columns: 15rem 1fr
-       - gap: 1.5rem
-       Check: the Topics box is on the left and the article is on the right. */
     .blog-layout {
-
+      display: grid;
+      grid-template-columns: 15rem 1fr;
+      gap: 1.5rem;
     }
 
-    /* TODO 4: Media query for phones.
-       Keep this at the very bottom of the CSS, right above </style>.
-       Write @media (max-width: 768px) { ... } and put these four rules inside it:
-       - .navbar         flex-direction: column;  gap: 0.5rem;   (logo on top, links under it)
-       - .card-container flex-direction: column;                 (cards stack)
-       - .blog-layout    grid-template-columns: 1fr;             (one column)
-       - .footer         flex-direction: column;                 (sections stack)
-       Check at width 375: everything stacks into one column.
-       Check at width 1200: everything goes back to rows. */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .card-container {
+        flex-direction: column;
+      }
+
+      .blog-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .footer {
+        flex-direction: column;
+      }
+    }
 
   </style>
 </head>
