@@ -84,18 +84,17 @@
   margin-top: 1.5rem;                  /* add space above the grid */
 }
 
+
 /* Give both boxes a border so you can see the two columns */
 .page-layout aside,
 .page-layout section {
-  background-color: #ff0000;
+  background-color: #ffffff;
   border: 2px solid #2c3e50;
   border-radius: 8px;
   padding: 1rem;
 }
-
-/* Make the sidebar a different color */
 .page-layout aside {
-  background-color: #ff0000;
+  background-color: #ffffff;
 }
 
     @media (max-width: 768px) {
@@ -104,11 +103,14 @@
             gap: 0.5rem;
         }
     
-    .cards {
-        flex-direction: column;
+        .cards {
+            flex-direction: column;
+        }
+
+        .page-layout {
+            grid-template-columns: 1fr;
+        }
     }
-}
-    
 
     /* ===== MARKER A: new rules go here (Steps 3 and 6) ===== */
 
