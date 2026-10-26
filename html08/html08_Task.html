@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coding Camp Registration Task</title>
+
+  <!--
+    html08 Practice Task: Coding Camp Registration Form
+
+    Part 1 (HTML): build the form in the <body> by following TODO 1 - TODO 9.
+    Part 2 (CSS):  style it in the <style> block below by following TODO 10 - TODO 20.
+    Part 3 (Test): follow TODO 21 at the bottom of the page.
+
+    Use the walkthrough (html08_Walkthrough.md) if you get stuck.
+    Save this file in your html08 folder and push it with GitHub Desktop when done.
+  -->
+
+  <style>
+    /* ================= PART 2: CSS ================= */
+
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    form {
+      background-color: white;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    fieldset {
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      padding: 15px;
+      margin: 15px 0;
+      background-color: #fafafa;
+    }
+
+    legend {
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #333;
+      padding: 0 8px;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .choice {
+      font-weight: normal;
+    }
+
+    input[type="text"], input[type="email"], input[type="password"],
+    input[type="tel"], input[type="number"], input[type="date"],
+    select, textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-family: inherit;
+      box-sizing: border-box;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #007bff;
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+    }
+
+    .button-group {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 12px 20px;
+      margin: 5px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      background-color: #007bff;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    button[type="reset"] {
+      background-color: #6c757d;
+    }
+
+    button[type="reset"]:hover {
+      background-color: #545b62;
+    }
+
+    @media (max-width: 600px) {
+      button {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Summer Coding Camp Registration</h1>
+
+  <!-- ================= PART 1: HTML ================= -->
+
+  <form id="camp-form" action="#" method="get">
+    <fieldset>
+      <legend>Camper Information</legend>
+
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" placeholder="First and last name" required>
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="At least 8 characters" minlength="8" required>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" placeholder="330-555-0100">
+
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="13" max="18">
+
+      <label for="startDate">Start Date:</label>
+      <input type="date" id="startDate" name="startDate" required>
+    </fieldset>
+
+    <fieldset>
+      <legend>T-Shirt Size</legend>
+
+      <label class="choice">
+         <input type="radio" name="shirtSize" value="small" required> Small</label>
+
+      <label class="choice">
+         <input type="radio" name="shirtSize" value="medium"> Medium</label>
+
+      <label class="choice">
+         <input type="radio" name="shirtSize" value="large"> Large</label>
+
+      <label class="choice">
+         <input type="radio" name="shirtSize" value="xlarge"> X-Large</label>
+         
+    </fieldset>
+
+    <fieldset>
+      <legend>What do you want to learn?</legend>
+
+      <label class="choice">
+         <input type="checkbox" name="topics" value="html"> HTML and CSS</label>
+      <label class="choice">
+
+         <input type="checkbox" name="topics" value="javascript"> JavaScript</label>
+
+      <label class="choice">
+
+         <input type="checkbox" name="topics" value="python"> Python</label>
+
+      <label class="choice">
+
+         <input type="checkbox" name="topics" value="games"> Game Design</label>
+
+      <label class="choice">
+
+         <input type="checkbox" name="topics" value="robots"> Robotics</label>
+
+    </fieldset>
+
+    <fieldset>
+      <legend>Contact and Comments</legend>
+
+      <label for="contact">Best way to reach you:</label>
+      <select id="contact" name="contact" required>
+        <option value="">-- Choose one --</option>
+        <option value="email">Email</option>
+        <option value="phone">Phone call</option>
+        <option value="text">Text message</option>
+        <option value="mail">Postal mail</option>
+      </select>
+
+      <label for="comments">Anything else we should know?</label>
+      <textarea id="comments" name="comments" rows="5" cols="40" maxlength="500" placeholder="Allergies, questions, or anything else"></textarea>
+    </fieldset>
+
+    <div class="button-group">
+      <button type="submit">Register</button>
+      <button type="reset">Clear Form</button>
+    </div>
+
+    <p><a href="mailto:camp@example.com">Questions? Email the camp director.</a></p>
+  </form>
+
+  <!--
+  a) The name attribute identifies the form field when the form is submitted and is used in the query string.
+  b) All radio buttons share one name so only one option in the group can be selected at a time.
+  c) get sends form data in the URL, while post sends it in the request body and is better for private or larger data.
+  d) We use action="#" because there is no server-side script yet, so the page reloads to itself for testing.
+  e) A password should never use get because it would appear in the browser address bar and history, exposing it.
+  -->
+  <!-- ================= PART 3: TEST ================= -->
+  <!-- TODO 21: Test your form and fix anything that does not work.
+       [ ] Click each label: the cursor or check goes to the right control
+       [ ] Click Register with the form empty: the browser stops you
+       [ ] Type an email with no @ sign: the browser stops you
+       [ ] Type a 5-letter password: the browser stops you
+       [ ] Only one T-shirt size can be picked; many topics can be checked
+       [ ] Fill it in, click Register, and find your answers in the address bar
+       [ ] Clear Form empties everything
+       [ ] Tab goes top to bottom and you can always see which box you're in
+       [ ] Phone width (Developer Tools > device toolbar): the buttons go full width
+       [ ] The page passes https://validator.w3.org/
+  -->
+
+</body>
+</html>
