@@ -55,12 +55,12 @@ Type your answers on the blank line under each **Answer:**. Don't just copy the 
 
 **g.** Convert the hex pair `C0` to a normal number. Show your work using the rule in section 1.4 (first digit × 16, plus the second digit). Remember C = 12.
 
-**Answer: **
+**Answer: 12*16+0=192 **
 
 
 **h.** `#F80` is short hex. Write it out as a full 6-digit hex code.
 
-**Answer:**
+**Answer: 15*16+15=255  8*16+8=136  0*16+0=0 (255, 136, 0)**
 
 
 ## 4. Colors in CSS
@@ -70,7 +70,13 @@ Type your answers on the blank line under each **Answer:**. Don't just copy the 
 - Makes the page (`body`) background white
 
 ```css
+h1 {
+  color: #ff0000;
+}
 
+body {
+  background-color: rgb(255, 255, 255);
+}
 
 ```
 
