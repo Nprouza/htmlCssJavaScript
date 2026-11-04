@@ -83,31 +83,41 @@ body {
 **j.** Write a CSS rule for a class called `.overlay` that makes its background **black and half see-through**. Which number controls the see-through part?
 
 ```css
-
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+}
 
 ```
 
-**Answer:**
+**Answer: The 4th number (0.5) controls the see-through part.
+This value is called the alpha channel (transparency/opacity), which ranges from 0 (completely invisible) to 1 (completely solid). A value of 0.5 makes it 50% transparent.**
 
 
 **k.** Why is yellow text (`#FFFF00`) on a white background (`#FFFFFF`) a bad choice? What would you change?
 
-**Answer:**
+**Answer:Very low contrast makes it nearly unreadable and fails accessibility guidelines. Use dark text (like #222222) on the white background, or put the yellow text on a dark background (like #000000).**
 
 
 ## 5. Your own site
 
 **l.** Open the `styles.css` for your DIY website. Pick one color you used (or choose a new one you like). Write it as a hex code, then explain what the red, green, and blue pairs tell you about the color.
 
-**Answer:**
+**Answer: Hex code: #3B82F6 (Blue)
+
+3B (Red): Low red.
+
+82 (Green): Medium green.
+
+F6 (Blue): High blue (dominates the mix).**
 
 
 ## Closing 12a — Vocabulary
 
 | Term | Your definition |
 |---|---|
-| RGB | |
-| Hex code | |
-| Hexadecimal | |
-| Additive color | |
-| rgba | |
+| RGB |Color mode combinding red, green, and blue light. |
+| Hex code |a 6 character code used for web colors. |
+| Hexadecimal |A base 16 counting system using 0-9 and a-f. |
+| Additive color |Mixing colored light together all three at full strength make white. |
+| rgba |RGB plus alpha value for transparency.
+ |
